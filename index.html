@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VarOrga Survie</title>
+<meta name="description" content="Fiches de survie et de premiers secours illustrées, disponibles hors ligne.">
+<meta name="theme-color" content="#2f3a2c">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Survie">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="barre">
+  <button class="retour" id="btn-retour" aria-label="Retour" hidden>&#8592;</button>
+  <a href="#/" class="marque"><img src="icons/icon.svg" alt="" width="28" height="28"><span>VarOrga <b>Survie</b></span></a>
+  <span class="etat" id="etat" title="État hors ligne"></span>
+</header>
+
+<div class="recherche">
+  <input id="q" type="search" placeholder="Rechercher : eau, feu, PLS, orage…" autocomplete="off" aria-label="Rechercher une fiche">
+</div>
+
+<main id="vue" tabindex="-1"></main>
+
+<nav class="onglets" aria-label="Navigation">
+  <a href="#/" data-tab="accueil"><span>&#9750;</span>Accueil</a>
+  <a href="#/urgence" data-tab="urgence" class="rouge"><span>&#10010;</span>Urgence</a>
+  <a href="#/favoris" data-tab="favoris"><span>&#9733;</span>Favoris</a>
+  <a href="#/cat/outils" data-tab="outils"><span>&#9881;</span>Outils</a>
+</nav>
+
+<script src="data/fiches-eau-feu.js"></script>
+<script src="data/fiches-abri-nourriture.js"></script>
+<script src="data/fiches-orientation-climat.js"></script>
+<script src="data/fiches-secours.js"></script>
+<script src="data/fiches-crise-mental-materiel.js"></script>
+<script src="data/fiches-potager-1.js"></script>
+<script src="data/fiches-potager-2.js"></script>
+<script src="data/fiches-outils.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
